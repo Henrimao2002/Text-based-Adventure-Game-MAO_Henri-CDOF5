@@ -25,6 +25,14 @@ def left_path():
     elif choice == "build":
         print("You build a raft and successfully cross the river.")
         print("On the other side, you find a village and are welcomed as a hero. You win!")
+        print("The villagers share tales of an ancient artifact hidden in the mountains. Do you want to 'search' for it or 'stay'? ")
+        choice = input("What will you do? ").lower()
+        if choice == "search":
+            print("You venture into the mountains and find the artifact, unlocking a new adventure. You are the ultimate hero! You win!")
+        elif choice == "stay":
+            print("You live peacefully in the village, enjoying your new life. You win!")
+        else:
+            print("Invalid choice. The villagers grow wary of you. Game Over.")
     elif choice == "follow":
         print("You follow the river downstream and find a waterfall. Hidden behind it is a cave with treasure. You win!")
     else:
@@ -38,6 +46,14 @@ def right_path():
 
     if choice == "enter":
         print("Inside the cave, you find a treasure chest. You win!")
+        print("However, you also hear a strange noise. Do you 'investigate' or 'leave'? ")
+        choice = input("What will you do? ").lower()
+        if choice == "investigate":
+            print("You find a secret passage leading to an underground city. You win a new adventure!")
+        elif choice == "leave":
+            print("You leave with the treasure, safe and sound. You win!")
+        else:
+            print("Invalid choice. The cave collapses. Game Over.")
     elif choice == "keep walking":
         print("You keep walking and fall into a trap. Game Over.")
     elif choice == "climb":
@@ -53,6 +69,14 @@ def straight_path():
 
     if choice == "knock":
         print("A friendly wizard answers and gives you a magic amulet. You win!")
+        print("The wizard asks if you'd like to learn a spell. Do you say 'yes' or 'no'? ")
+        choice = input("What will you do? ").lower()
+        if choice == "yes":
+            print("You learn a powerful spell and become a renowned mage. You win a life of adventure!")
+        elif choice == "no":
+            print("You thank the wizard and continue your journey with the amulet. You win!")
+        else:
+            print("Invalid choice. The wizard vanishes in frustration. Game Over.")
     elif choice == "sneak":
         print("You sneak around and find a bag of gold, but the wizard catches you. Game Over.")
     elif choice == "ignore":
