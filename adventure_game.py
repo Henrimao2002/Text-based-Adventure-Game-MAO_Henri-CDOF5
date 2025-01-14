@@ -6,7 +6,7 @@ def start_game():
     choice = input("Which way will you go? ").lower()
 
     if choice == "left":
-        left_path()
+        left_path(
     elif choice == "right":
         right_path()
     elif choice == "straight":
